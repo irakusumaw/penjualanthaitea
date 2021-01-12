@@ -1,0 +1,98 @@
+.wrap{
+    background: white;
+    width: 1300px;
+    margin: 10px auto;
+}
+ 
+/*bagian header*/
+.wrap .header{
+    border-bottom: 5px solid orange;
+    font-style: bold;
+    background: white;
+    /*height: 50px;*/
+    padding: 2px 10px;
+    margin : center;
+    text-align: center;
+    
+}
+.wrap .header .button ul{
+    background: white;
+}
+ 
+/*akhir header*/
+ 
+/*bagian menu*/
+.wrap .menu{
+    background: yellow;
+}
+ 
+.wrap .menu ul{
+    padding: 0;
+    margin: 0;
+    background: yellow;
+    overflow: hidden;
+}
+ 
+.wrap .menu ul li{
+
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+/*akhir menu*/
+ 
+.clear{
+    clear: both;
+}
+ 
+.badan{
+    height: 450px;
+}
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+    border-right:5px solid orange;
+    background: white;
+    float: left;    
+    width: 20%;
+    height: 70.5%;
+    text-align : center;
+    padding-top : 5%;
+    padding-bottom : 5%;
+}
+.wrap .badan .sidebar .button a{
+    text-decoration: none;
+    border: 1px solid orange;        /* border: tebal[px] tipe[solid,dashed,dotted] warna[#hex, rgb()]; */
+    background-color: orange;        /* ubah warna background */
+    width: 100%;
+    color: black; 
+    font-style: bold;                 /* ubah warna font */
+    font-size: 16px;                  /* ubah ukuran font */
+    padding: 0.5em 1em 0.5em 1em;     /* padding: top right bottom left; */
+}
+.button:hover {
+    text-decoration: none;
+    opacity: 0.8;                     /* ubah tingkat transparansi saat cursor menuju button. 0.0 s.d 1.0 */
+}
+.button:active {
+    text-decoration: none;
+    background: #FFFFFF;              /* ubah background saat button ditekan */
+}
+/*akhir sidebar*/
+ 
+.wrap .badan .content{
+    background-color : white;
+    float: left;
+    height: 93%;
+    width: 70%; 
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top : 20px;
+    text-align : left;
+
+}
+ 
+.wrap .footer{
+    color: orange;
+    width: 100%;
+    padding: 10px;
+}

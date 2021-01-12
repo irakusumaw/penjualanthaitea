@@ -1,0 +1,27 @@
+<?php
+   $no_transaksi=$_GET["no_transaksi"];
+
+   $host ="localhost";
+   $user ="root";
+   $paswd="";
+   $db   ="barang2";
+
+   $idkoneksi=@mysql_connect($host,$user,$paswd) or
+      die("Koneksi dengan <b>Server MySQL</b> tidak berhasil !");
+   $iddatabase=@mysql_select_db($db);
+
+   $sqlstr="delete from t_input where no_transaksi='$no_transaksi'";
+   $hasil=@mysql_query($sqlstr,$idkoneksi);
+
+   if($hasil)
+   {
+       echo("Data berhasil dihapus !<br>");
+   }else
+   {
+       echo("Data gagal dihapus !<br>");
+   }
+   @mysql_close($idkoneksi);
+?>
+<br><a href="laporan.php">Daftar Karyawan</a>
+<br>
+      <button class="button"><a href="index.php">Home</a></button></br>
